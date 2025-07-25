@@ -23,7 +23,7 @@ const Header = () => {
           <IconSettings stroke={2} />
         </div>
         <div className="bg-white-100 p-1.5 rounded-full">
-          <Indicator color="azure-radiance.6" offset={7} size={9} processing>
+          <Indicator color="red" offset={7} size={9} processing>
           <IconBell stroke={2} />
           </Indicator>
         </div>
