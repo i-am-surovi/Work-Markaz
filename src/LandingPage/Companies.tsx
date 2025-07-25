@@ -3,12 +3,12 @@ import { companies } from "../Data/Data";
 
 const Companies = () => {
   return (
-    <div className="mt-10 pb-5">
+    <div className="mt-10 pb-2">
       <div className="text-4xl font-semibold text-white-950 text-center mb-10">
         Trusted By <span className="text-azure-radiance-600">1000+</span> Companies
       </div>
 
-      <div className="bg-azure-radiance-950 py-5">
+      <div className="bg-white-950 py-2">
         <Marquee pauseOnHover={true} speed={40}>
           <div className="flex items-center gap-16 px-6">
             {companies.map((company, index) => (
@@ -17,7 +17,7 @@ const Companies = () => {
                 href={company.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-shrink-0 p-2 rounded-md hover:bg-white-300 transition"
+                className="flex-shrink-0 p-2 rounded-md hover:bg-azure-radiance-400 transition"
               >
                 <img
                   className="h-14"

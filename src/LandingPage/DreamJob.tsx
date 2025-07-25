@@ -3,7 +3,7 @@ import { IconDotsVertical, IconSearch } from "@tabler/icons-react";
 
 const DreamJob = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 place-items-center text-center md:text-left gap-6 px-6 sm:px-6 md:px-12 lg:px-14 mx-auto">
+    <div className="grid grid-cols-1 md:grid-cols-2 place-items-center text-center md:text-left gap-6 px-6 sm:px-6 md:px-12 lg:px-14 mx-auto mt-5">
       {/* Left side content */}
       <div className="flex flex-col w-full gap-3">
         <div className="text-6xl font-bold leading-tight text-white-950 [&>span]:text-azure-radiance-600">
