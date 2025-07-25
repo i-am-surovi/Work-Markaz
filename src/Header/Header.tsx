@@ -16,7 +16,7 @@ const Header = () => {
       {/* Logo Section */}
       <div className="flex gap-1 items-center text-azure-radiance-600">
         <IconDeviceDesktopSearch className="h-8 w-8" stroke={2.5} />
-        <div className="text-3xl font-semibold">JobHunt</div>
+        <div className="text-3xl font-semibold">Work Markaz</div>
       </div>
 
       {/* Desktop NavLinks */}
