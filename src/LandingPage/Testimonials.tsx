@@ -6,7 +6,8 @@ const Testimonials = () => {
     <div className="mt-10 pb-5 w-full max-w-screen-xl mx-auto px-4">
       {/* Title */}
       <div className="text-3xl sm:text-4xl md:text-5xl font-semibold text-white-950 text-center mb-3">
-        What <span className="text-azure-radiance-600">Users </span> say about us?
+        What <span className="text-azure-radiance-600">Users </span> say about
+        us?
       </div>
 
       {/* Container */}

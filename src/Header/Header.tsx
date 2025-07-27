@@ -12,7 +12,7 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="w-full bg-white-50 px-6 text-white h-20 flex justify-between items-center relative">
+    <div className="w-full bg-white-50 px-6 text-white h-20 flex justify-between items-center relative font-['poppins']">
       {/* Logo Section */}
       <div className="flex gap-1 items-center text-azure-radiance-600">
         <IconDeviceDesktopSearch className="h-8 w-8" stroke={2.5} />
