@@ -1,101 +1,237 @@
-import { IconBriefcase, IconMapPin, IconRecharging, IconSearch } from "@tabler/icons-react";
+import {
+  IconBriefcase,
+  IconMapPin,
+  IconRecharging,
+  IconSearch,
+} from "@tabler/icons-react";
 
 const dropdownData = [
-    { title: "Job Title", icon: IconSearch, options: ['Designer', 'Developer', 'Product Manager', 'Marketing Specialist', 'Data Analyst', 'Sales Executive', 'Content Writer', 'Customer Support'] },
-    { title: "Location", icon: IconMapPin, options: ['Delhi', 'New York', 'San Francisco', 'London', 'Berlin', 'Tokyo', 'Sydney', 'Toronto'] },
-    { title: "Experience", icon: IconBriefcase, options: ['Entry Level', 'Intermediate', 'Expert'] },
-    { title: "Job Type", icon: IconRecharging, options: ['Full Time', 'Part Time', 'Contract', 'Freelance', 'Internship'] }
+  {
+    title: "Job Title",
+    icon: IconSearch,
+    options: [
+      "Software Engineer",
+      "Digital Marketer",
+      "Graphic Designer",
+      "Sales Executive",
+      "Data Entry Operator",
+      "Customer Support",
+      "Content Writer",
+      "Finance Officer",
+      'Designer', 
+      'Developer', 
+      'Product Manager', 
+      'Marketing Specialist', 
+      'Data Analyst',
+    ],
+  },
+  {
+    title: "Location",
+    icon: IconMapPin,
+    options: [
+      "Dhaka",
+      "Chattogram",
+      "Khulna",
+      "Rajshahi",
+      "Sylhet",
+      "Barisal",
+      "Rangpur",
+      "Mymensingh",
+    ],
+  },
+  {
+    title: "Experience",
+    icon: IconBriefcase,
+    options: ["Fresher", "1-3 Years", "3-5 Years", "5+ Years"],
+  },
+  {
+    title: "Job Type",
+    icon: IconRecharging,
+    options: ["Full Time", "Part Time", "Internship", "Contractual", "Remote"],
+  },
 ];
 
 const jobList = [
-    {
-      jobTitle: "Product Designer",
-      company: "Meta",
-      applicants: 25,
-      experience: "Entry Level",
-      jobType: "Full-Time",
-      location: "New York",
-      package: "32 LPA",
-      postedDaysAgo: 12,
-      description: "Meta is seeking a Product Designer to join our team. You'll be working on designing user-centric interfaces for our blockchain wallet platform. This is an excellent opportunity for entry-level designers to grow their skills in a dynamic environment."
-    },
-    {
-      jobTitle: "Sr. UX Designer",
-      company: "Netflix",
-      applicants: 14,
-      experience: "Expert",
-      jobType: "Part-Time",
-      location: "San Francisco",
-      package: "40 LPA",
-      postedDaysAgo: 5,
-      description: "Netflix is looking for a Sr. UX Designer to enhance our user experience on streaming platforms. Ideal candidates will have extensive experience in user research and interaction design, helping us to deliver engaging content to our global audience."
-    },
-    {
-      jobTitle: "Product Designer",
-      company: "Microsoft",
-      applicants: 58,
-      experience: "Intermediate",
-      jobType: "Full-Time",
-      location: "Remote",
-      package: "35 LPA",
-      postedDaysAgo: 4,
-      description: "Join Microsoft as a Product Designer and contribute to our new Lightspeed LA studio. We're looking for designers who can create intuitive and compelling gaming experiences. This is a remote position, offering flexibility and the opportunity to work with a leading technology company."
-    },
-    {
-      jobTitle: "Product Designer",
-      company: "Adobe",
-      applicants: 23,
-      experience: "Expert",
-      jobType: "Part-Time",
-      location: "Toronto",
-      package: "33 LPA",
-      postedDaysAgo: 22,
-      description: "Adobe is seeking a part-time Product Designer to help us enhance our user experience. You will work closely with our team to design features that make our platform more engaging and user-friendly. This role is perfect for experienced designers looking for flexible work hours."
-    },
-    {
-      jobTitle: "Backend Developer",
-      company: "Google",
-      applicants: 21,
-      experience: "Entry Level",
-      jobType: "Full-Time",
-      location: "Bangalore",
-      package: "38 LPA",
-      postedDaysAgo: 8,
-      description: "Google is hiring a Backend Developer to join our team in Bangalore. You'll be responsible for developing scalable backend systems that power our services. This role requires strong problem-solving skills and experience with modern backend technologies."
-    },
-    {
-      jobTitle: "SMM Manager",
-      company: "Spotify",
-      applicants: 73,
-      experience: "Intermediate",
-      jobType: "Full-Time",
-      location: "Delhi",
-      package: "34 LPA",
-      postedDaysAgo: 8,
-      description: "Spotify is looking for an SMM Manager to lead our social media marketing efforts in Delhi. You will create and manage campaigns to promote our music streaming service, engage with our audience, and drive growth. This role is ideal for creative marketers with a passion for music."
-    },
-    {
-      jobTitle: "Frontend Developer",
-      company: "Amazon",
-      applicants: 50,
-      experience: "Intermediate",
-      jobType: "Full-Time",
-      location: "Seattle",
-      package: "36 LPA",
-      postedDaysAgo: 10,
-      description: "Amazon is looking for a Frontend Developer to build and maintain our customer-facing applications. You will work with a dynamic team to create seamless and responsive web applications."
-    },
-    {
-      jobTitle: "iOS Developer",
-      company: "Apple",
-      applicants: 30,
-      experience: "Expert",
-      jobType: "Full-Time",
-      location: "Cupertino",
-      package: "42 LPA",
-      postedDaysAgo: 7,
-      description: "Apple is seeking an iOS Developer to join our team in Cupertino. You will work on developing cutting-edge applications for iOS devices, ensuring high performance and an exceptional user experience."
-    }
-  ];
+  {
+    jobTitle: "UI/UX Designer",
+    company: "Pathao",
+    applicants: 18,
+    experience: "Fresher",
+    jobType: "Full Time",
+    location: "Dhaka",
+    package: "40,000/month",
+    postedDaysAgo: 5,
+    description:
+      "Pathao is looking for a UI/UX Designer to join our fast-growing product team. This is an ideal opportunity for freshers who are passionate about design and eager to contribute to a major Bangladeshi tech company.",
+  },
+  {
+    jobTitle: "Backend Developer",
+    company: "Shohoz",
+    applicants: 27,
+    experience: "1-3 Years",
+    jobType: "Full Time",
+    location: "Dhaka",
+    package: "70,000/month",
+    postedDaysAgo: 9,
+    description:
+      "Shohoz is hiring a Backend Developer experienced in Node.js and MongoDB to build scalable systems. If you are looking to work on high-impact applications, this role is for you.",
+  },
+  {
+    jobTitle: "Product Designer",
+    company: "Meta",
+    applicants: 25,
+    experience: "Entry Level",
+    jobType: "Full Time",
+    location: "Dhaka",
+    package: "45,000/month",
+    postedDaysAgo: 12,
+    description:
+      "Meta is hiring an Entry-Level Product Designer for its blockchain wallet platform. The selected candidate will work closely with the design and development team to create user-friendly and visually appealing interfaces. Ideal for fresh graduates who want to kickstart their design career with a global tech leader.",
+  },
+  {
+    jobTitle: "Sr. UX Designer",
+    company: "Netflix",
+    applicants: 14,
+    experience: "Expert",
+    jobType: "Part Time",
+    location: "Dhaka",
+    package: "90,000/month",
+    postedDaysAgo: 5,
+    description:
+      "Netflix is seeking a highly experienced Senior UX Designer to improve its streaming platform’s user experience. The role includes user research, prototyping, and UX strategy. Remote flexibility available. Strong portfolio and at least 5 years of UX experience required.",
+  },
+  {
+    jobTitle: "UI/UX Intern",
+    company: "Adobe",
+    applicants: 41,
+    experience: "Internship",
+    jobType: "Internship",
+    location: "Dhaka",
+    package: "12,000/month",
+    postedDaysAgo: 2,
+    description:
+      "Adobe is offering a UI/UX internship opportunity for passionate design students or recent graduates. Learn directly from professionals and work on real-life design challenges. Good knowledge of Figma or Adobe XD is preferred.",
+  },
+  {
+    jobTitle: "Frontend Developer",
+    company: "Google",
+    applicants: 32,
+    experience: "Mid-Level",
+    jobType: "Full Time",
+    location: "Dhaka",
+    package: "85,000/month",
+    postedDaysAgo: 9,
+    description:
+      "Google is hiring a skilled Frontend Developer to work on scalable web applications. The ideal candidate should be proficient in React.js, JavaScript, and RESTful APIs. Minimum 2 years of relevant experience required.",
+  },
+  {
+    jobTitle: "Graphic Designer",
+    company: "Amazon",
+    applicants: 20,
+    experience: "Fresher",
+    jobType: "Full Time",
+    location: "Dhaka",
+    package: "45,000/month",
+    postedDaysAgo: 7,
+    description:
+      "Amazon is hiring a creative Graphic Designer to develop digital content for global campaigns. This role is ideal for fresh graduates who have a strong portfolio in Photoshop, Illustrator, or similar tools.",
+  },
+  {
+    jobTitle: "Junior Visual Designer",
+    company: "Spotify",
+    applicants: 18,
+    experience: "Junior",
+    jobType: "Full Time",
+    location: "Dhaka (Hybrid)",
+    package: "60,000/month",
+    postedDaysAgo: 6,
+    description:
+      "Spotify is looking for a Junior Visual Designer to support its South Asia content team. Responsibilities include designing promotional banners, thumbnails, and motion graphics. Basic animation skills and experience with tools like Adobe After Effects will be an advantage. Ideal for designers with 1–2 years of experience.",
+  },
+  {
+    jobTitle: "Design System Intern",
+    company: "Apple",
+    applicants: 37,
+    experience: "Internship",
+    jobType: "Internship",
+    location: "Dhaka",
+    package: "15,000/month",
+    postedDaysAgo: 3,
+    description:
+      "Apple is offering an internship to assist in maintaining and expanding its internal design system. This role suits detail-oriented students or freshers with basic knowledge of Figma components, UI tokens, and responsive design principles. Mentorship and learning opportunities provided.",
+  },
+  {
+    jobTitle: "Digital Marketing Executive",
+    company: "Daraz",
+    applicants: 40,
+    experience: "1-3 Years",
+    jobType: "Contractual",
+    location: "Chattogram",
+    package: "55,000/month",
+    postedDaysAgo: 4,
+    description:
+      "Daraz is hiring a Digital Marketing Executive who will be responsible for campaign execution, SEO, and analytics to drive online sales.",
+  },
+  {
+    jobTitle: "Frontend Developer",
+    company: "BJIT",
+    applicants: 19,
+    experience: "3-5 Years",
+    jobType: "Remote",
+    location: "Sylhet",
+    package: "90,000/month",
+    postedDaysAgo: 2,
+    description:
+      "BJIT is seeking a Frontend Developer experienced in React to join our remote team. Must be able to work independently and deliver clean code.",
+  },
+  {
+    jobTitle: "Customer Support Representative",
+    company: "bKash",
+    applicants: 65,
+    experience: "Fresher",
+    jobType: "Full Time",
+    location: "Khulna",
+    package: "30,000/month",
+    postedDaysAgo: 6,
+    description:
+      "bKash is hiring energetic Customer Support Representatives. Strong communication skills in Bangla and English are a must.",
+  },
+  {
+    jobTitle: "Content Writer",
+    company: "News24",
+    applicants: 34,
+    experience: "1-3 Years",
+    jobType: "Part Time",
+    location: "Dhaka",
+    package: "25,000/month",
+    postedDaysAgo: 10,
+    description:
+      "News24 is seeking a content writer to create engaging articles on current affairs, technology, and lifestyle. Remote flexibility available.",
+  },
+  {
+    jobTitle: "Mobile App Developer",
+    company: "REVE Systems",
+    applicants: 22,
+    experience: "3-5 Years",
+    jobType: "Full Time",
+    location: "Dhaka",
+    package: "100,000/month",
+    postedDaysAgo: 3,
+    description:
+      "REVE Systems is hiring a Mobile App Developer skilled in Flutter or native Android. Join us to develop telecom and communication apps used globally.",
+  },
+  {
+    jobTitle: "Sales Executive",
+    company: "Grameenphone",
+    applicants: 55,
+    experience: "Fresher",
+    jobType: "Contractual",
+    location: "Barisal",
+    package: "28,000/month",
+    postedDaysAgo: 7,
+    description:
+      "Grameenphone is looking for enthusiastic Sales Executives to drive growth in Barisal. Ideal for recent graduates eager to start a career in telecom.",
+  },
+];
 
-  export {dropdownData,jobList};
+export { dropdownData, jobList };
