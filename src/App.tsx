@@ -9,6 +9,9 @@ import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
 import FindJobsPage from "./Pages/FindJobsPage";
 import FindTalentPage from "./Pages/FindTalentPage";
+import SignUpPage from "./Pages/SignUpPage";
+import TalentProfilePage from "./Pages/TalentProfilePage";
+import PostJobPage from "./Pages/PostJobPage";
 
 function App() {
   const theme = createTheme({
@@ -41,7 +44,11 @@ function App() {
         "#152c56",
       ],
     },
-    fontFamily:"poppins, sans-serif"
+    fontFamily:"poppins, sans-serif",
+    focusRing: "never",
+    primaryColor:"azure-radiance",
+    primaryShade:6,
+
   });
 
   return (
@@ -49,9 +56,12 @@ function App() {
       <BrowserRouter>
         <Header/>
         <Routes>
+          <Route path='/signup' element={<SignUpPage/>} />
           <Route path='*' element={<HomePage/>} />
           <Route path='/find-jobs' element={<FindJobsPage/>} />
+          <Route path='/post-job' element={<PostJobPage/>} />
           <Route path='/find-talent' element={<FindTalentPage/>} />
+          <Route path='/talent-profile' element={<TalentProfilePage/>} />
         </Routes>
         <Footer/>
       </BrowserRouter>

@@ -1,8 +1,26 @@
 import { IconBriefcase, IconMapPin, IconRecharging, IconSearch } from "@tabler/icons-react";
 
-const searchFields=[
-    { title: "Job Title", icon: IconSearch, options: ['Designer', 'Developer', 'Product Manager', 'Marketing Specialist', 'Data Analyst', 'Sales Executive', 'Content Writer', 'Customer Support'] },
-    { title: "Location", icon: IconMapPin, options: [
+const searchFields = [
+  {
+    title: "Job Title",
+    icon: IconSearch,
+    options: [
+      "Software Engineer",
+      "Frontend Developer",
+      "Backend Developer",
+      "Full Stack Developer",
+      "UI/UX Designer",
+      "Digital Marketer",
+      "Graphic Designer",
+      "Content Writer",
+      "Customer Support",
+      "Finance Officer",
+    ],
+  },
+  {
+    title: "Location",
+    icon: IconMapPin,
+    options: [
       "Dhaka",
       "Chattogram",
       "Khulna",
@@ -11,103 +29,213 @@ const searchFields=[
       "Barisal",
       "Rangpur",
       "Mymensingh",
-    ] },
-    { title: "Skills", icon: IconRecharging, options: ["HTML","CSS","JavaScript","React","Angular","Node.js","Python","Java","Ruby","PHP","SQL","MongoDB","PostgreSQL","Git","API Development","Testing and Debugging","Agile Methodologies","DevOps","AWS","Azure","Google Cloud"] },
-]
+    ],
+  },
+  {
+    title: "Experience",
+    icon: IconBriefcase,
+    options: ["Fresher", "1-3 Years", "3-5 Years", "5+ Years"],
+  },
+  {
+    title: "Skills",
+    icon: IconRecharging,
+    options: [
+      "React",
+      "Angular",
+      "Vue.js",
+      "Node.js",
+      "Express",
+      "Python",
+      "Django",
+      "PHP",
+      "Laravel",
+      "Java",
+      "SpringBoot",
+      "Figma",
+      "Sketch",
+      "Adobe XD",
+      "AWS",
+      "Docker",
+      "Kubernetes",
+      "SQL",
+      "MongoDB",
+      "Git",
+      "Testing & Debugging",
+      "Agile Methodologies",
+    ],
+  },
+];
+
 const talents = [
-    {
-      name: "Jarrod Wood",
-      role: "Software Engineer",
-      company: "Google",
-      topSkills: ["React", "SpringBoot", "MongoDB"],
-      about: "As a Software Engineer at Google, I specialize in building scalable and high-performance applications. My expertise lies in integrating front-end and back-end technologies to deliver seamless user experiences. With a strong foundation in React and SpringBoot, and a focus on MongoDB for database solutions, I am passionate about leveraging the latest technologies to solve complex problems and drive innovation. My goal is to create impactful software that enhances productivity and meets user needs effectively.",
-      expectedCtc: "₹48 - 60LPA",
-      location: "New York, United States",
-      image:"avatar"
-    },
-    {
-      name: "Alice Johnson",
-      role: "Frontend Developer",
-      company: "Facebook",
-      topSkills: ["HTML", "CSS", "JavaScript"],
-      about: "As a Frontend Developer at Facebook, I focus on creating visually appealing and highly interactive web applications. My expertise in HTML, CSS, and JavaScript allows me to build responsive and user-friendly interfaces that enhance user experience. I am dedicated to staying current with the latest trends and best practices in web development to ensure optimal performance and accessibility. I thrive in collaborative environments where I can contribute to innovative projects and deliver solutions that meet user expectations.",
-      expectedCtc: "₹40 - 55LPA",
-      location: "San Francisco, United States",
-      image:"avatar1"
-    },
-    {
-      name: "Bob Smith",
-      role: "Backend Developer",
-      company: "Amazon",
-      topSkills: ["Node.js", "Express", "MySQL"],
-      about: "As a Backend Developer at Amazon, I specialize in server-side development and database management. My skills in Node.js and Express allow me to build robust and scalable APIs, while my experience with MySQL ensures efficient data handling and storage. I am passionate about optimizing backend processes to support high-traffic applications and improve system performance. My approach to development emphasizes reliability, security, and the ability to adapt to evolving technological demands.",
-      expectedCtc: "₹50 - 65LPA",
-      location: "Seattle, United States",
-      image:"avatar"
-    },
-    {
-        name: "Diana Prince",
-        role: "UX/UI Designer",
-        company: "Adobe",
-        topSkills: ["Figma", "Sketch", "InVision"],
-        about: "As a UX/UI Designer at Adobe, I am dedicated to crafting visually compelling and user-centric designs. My expertise in Figma, Sketch, and InVision allows me to create intuitive interfaces that enhance user experience across digital platforms. I am passionate about translating complex ideas into clean and effective designs that align with user needs and business goals. My design process involves thorough research, user testing, and iterative design to ensure the highest quality and user satisfaction.",
-        expectedCtc: "₹35 - 50LPA",
-        location: "Los Angeles, United States",
-        image:"avatar2"
-      },
-    {
-      name: "Charlie Brown",
-      role: "Full Stack Developer",
-      company: "Microsoft",
-      topSkills: ["Python", "Django", "React"],
-      about: "As a Full Stack Developer at Microsoft, I work on developing end-to-end solutions for web applications. My expertise in Python and Django for backend development, combined with React for frontend, allows me to create cohesive and high-performing applications. I am adept at managing the entire development lifecycle, from designing intuitive user interfaces to implementing robust server-side logic. My goal is to deliver comprehensive solutions that meet both user needs and business objectives.",
-      expectedCtc: "₹45 - 60LPA",
-      location: "Redmond, United States",
-      image:"avatar"
-    },
-    {
-        name: "Fiona Gallagher",
-        role: "DevOps Engineer",
-        company: "Netflix",
-        topSkills: ["Docker", "Kubernetes", "AWS"],
-        about: "As a DevOps Engineer at Netflix, I focus on automating infrastructure and optimizing deployment processes to support scalable applications. My expertise in Docker, Kubernetes, and AWS enables me to manage and streamline complex cloud environments efficiently. I am dedicated to improving operational efficiency and reliability through continuous integration and delivery practices. My role involves collaborating with development teams to ensure seamless deployment and maintenance of applications, enhancing overall system performance and resilience.",
-        expectedCtc: "₹50 - 65LPA",
-        location: "Los Gatos, United States",
-        image:"avatar1"
-      },
-    {
-      name: "Ethan Hunt",
-      role: "Data Scientist",
-      company: "IBM",
-      topSkills: ["Python", "R", "Machine Learning"],
-      about: "As a Data Scientist at IBM, I leverage my skills in Python, R, and machine learning to analyze complex datasets and generate actionable insights. My work involves building predictive models and data-driven solutions to support strategic decision-making and business growth. I am committed to exploring innovative techniques and methodologies to enhance data analysis and drive meaningful outcomes. My goal is to turn data into valuable information that can help organizations solve problems and seize opportunities.",
-      expectedCtc: "₹55 - 70LPA",
-      location: "Austin, United States",
-      image:"avatar"
-    },    
-    {
-        name: "Helen Mirren",
-        role: "Mobile App Developer",
-        company: "Apple",
-        topSkills: ["Swift", "iOS", "Xcode"],
-        about: "As a Mobile App Developer at Apple, I specialize in creating intuitive and high-performance iOS applications. With expertise in Swift and Xcode, I design and develop apps that offer seamless user experiences and adhere to the highest standards of quality and performance. My role involves collaborating with cross-functional teams to deliver innovative features and ensure smooth integration with Apple's ecosystem. I am passionate about leveraging the latest technologies to build apps that delight users and drive engagement.",
-        expectedCtc: "₹55 - 70LPA",
-        location: "Cupertino, United States",
-        image:"avatar2"
-      },
-      {
-        name: "George Lucas",
-        role: "Cybersecurity Analyst",
-        company: "Cisco",
-        topSkills: ["Penetration Testing", "Network Security"],
-        about: "As a Cybersecurity Analyst at Cisco, I focus on safeguarding organizations from cyber threats through proactive security measures. My skills in penetration testing, network security, and ethical hacking enable me to identify vulnerabilities and implement effective countermeasures. I am dedicated to protecting sensitive data and ensuring compliance with security standards. My approach involves continuous monitoring, threat analysis, and incident response to maintain robust security posture and mitigate risks in an ever-evolving threat landscape.",
-        expectedCtc: "₹60 - 75LPA",
-        location: "San Jose, United States",
-        image:"avatar"
-      }
-  ];
-  const profile={
-    name: "Jarrod Wood",
+  {
+    name: "Sumaiya Hossain Surovi",
+    role: "Software Engineer",
+    company: "Pathao",
+    topSkills: ["React", "SpringBoot", "MongoDB"],
+    about:
+      "Software Engineer at Pathao building scalable applications integrating frontend and backend. Passionate about solving complex problems and creating seamless user experiences.",
+    expectedCtc: "৳ 1,00,000 - 1,50,000",
+    location: "Dhaka, Bangladesh",
+    image: "avt",
+  },
+  {
+    name: "Aminul Islam",
+    role: "Frontend Developer",
+    company: "bKash",
+    topSkills: ["HTML", "CSS", "JavaScript"],
+    about:
+      "Frontend Developer at bKash designing responsive and interactive web applications. Skilled in HTML, CSS, and JavaScript.",
+    expectedCtc: "৳ 90,000 - 1,20,000",
+    location: "Dhaka, Bangladesh",
+    image: "avatar1",
+  },
+  {
+    name: "Rafiq Ahmed",
+    role: "Backend Developer",
+    company: "Daraz",
+    topSkills: ["Node.js", "Express", "MySQL"],
+    about:
+      "Backend Developer at Daraz specializing in server-side applications and database management. Passionate about building reliable and scalable systems.",
+    expectedCtc: "৳ 1,00,000 - 1,40,000",
+    location: "Chattogram, Bangladesh",
+    image: "avatar2",
+  },
+  {
+    name: "Nadia Rahman",
+    role: "UI/UX Designer",
+    company: "Robi Axiata",
+    topSkills: ["Figma", "Sketch", "Adobe XD"],
+    about:
+      "UI/UX Designer at Robi Axiata creating intuitive and visually compelling user interfaces. Skilled in user research, prototyping, and responsive design.",
+    expectedCtc: "৳ 80,000 - 1,20,000 /month",
+    location: "Dhaka, Bangladesh",
+    image: "avatar3",
+  },
+  {
+    name: "Tanvir Hossain",
+    role: "Full Stack Developer",
+    company: "Grameenphone",
+    topSkills: ["Python", "Django", "React"],
+    about:
+      "Full Stack Developer at Grameenphone handling both frontend and backend development for web applications. Experienced in end-to-end high-performance solutions.",
+    expectedCtc: "৳ 1,00,000 - 1,50,000 /month",
+    location: "Dhaka, Bangladesh",
+    image: "avatar4",
+  },
+  {
+    name: "Fahim Rahman",
+    role: "Digital Marketer",
+    company: "Daraz",
+    topSkills: ["SEO", "Google Ads", "Social Media Marketing"],
+    about:
+      "Digital Marketing Executive at Daraz responsible for online campaigns, SEO optimization, and social media growth strategies. Skilled in analytics and performance tracking.",
+    expectedCtc: "৳ 70,000 - 1,00,000 /month",
+    location: "Chattogram, Bangladesh",
+    image: "avatar5",
+  },
+  {
+    name: "Sabrina Akter",
+    role: "Graphic Designer",
+    company: "Shohoz",
+    topSkills: ["Adobe Illustrator", "Photoshop", "After Effects"],
+    about:
+      "Graphic Designer at Shohoz creating digital content for campaigns and social media. Skilled in Adobe Illustrator, Photoshop, and After Effects.",
+    expectedCtc: "৳ 65,000 - 90,000 /month",
+    location: "Dhaka, Bangladesh",
+    image: "avatar6",
+  },
+  {
+    name: "Imran Chowdhury",
+    role: "Mobile App Developer",
+    company: "REVE Systems",
+    topSkills: ["Flutter", "Android", "iOS"],
+    about:
+      "Mobile App Developer at REVE Systems building telecom and communication apps using Flutter and native Android/iOS technologies.",
+    expectedCtc: "৳ 1,20,000 - 1,50,000 /month",
+    location: "Dhaka, Bangladesh",
+    image: "avatar7",
+  },
+  {
+    name: "Nusrat Jahan",
+    role: "Content Writer",
+    company: "News24",
+    topSkills: ["SEO", "Copywriting", "Blog Writing"],
+    about:
+      "Content Writer at News24 producing engaging articles on current affairs, tech, and lifestyle. Skilled in SEO and creating reader-friendly content.",
+    expectedCtc: "৳ 45,000 - 65,000 /month",
+    location: "Dhaka, Bangladesh",
+    image: "avatar8",
+  },
+  {
+    name: "Arif Hossain",
+    role: "Customer Support Executive",
+    company: "bKash",
+    topSkills: ["Communication", "Problem Solving", "CRM"],
+    about:
+      "Customer Support Executive at bKash assisting customers with queries and troubleshooting. Strong communication skills in Bangla and English.",
+    expectedCtc: "৳ 35,000 - 50,000 /month",
+    location: "Khulna, Bangladesh",
+    image: "avatar9",
+  },
+  {
+    name: "Tania Akter",
+    role: "Data Analyst",
+    company: "BRAC Bank",
+    topSkills: ["Excel", "SQL", "Power BI"],
+    about:
+      "Data Analyst at BRAC Bank analyzing business data and generating actionable insights using Excel, SQL, and Power BI.",
+    expectedCtc: "৳ 70,000 - 1,00,000 /month",
+    location: "Dhaka, Bangladesh",
+    image: "avatar10",
+  },
+  {
+    name: "Farhan Karim",
+    role: "DevOps Engineer",
+    company: "Netflix Bangladesh",
+    topSkills: ["Docker", "Kubernetes", "AWS"],
+    about:
+      "DevOps Engineer managing infrastructure, deployment pipelines, and cloud services ensuring scalability and reliability.",
+    expectedCtc: "৳ 1,00,000 - 1,40,000 /month",
+    location: "Dhaka, Bangladesh",
+    image: "avatar11",
+  },
+  {
+    name: "Rumana Sultana",
+    role: "HR Executive",
+    company: "Aamra Companies",
+    topSkills: ["Recruitment", "Employee Relations", "HR Policies"],
+    about:
+      "HR Executive handling recruitment, employee relations, and HR operations to ensure a productive work environment.",
+    expectedCtc: "৳ 60,000 - 85,000 /month",
+    location: "Chattogram, Bangladesh",
+    image: "avatar12",
+  },
+  {
+    name: "Sajib Alam",
+    role: "Frontend Developer",
+    company: "BJIT",
+    topSkills: ["React", "JavaScript", "HTML/CSS"],
+    about:
+      "Frontend Developer at BJIT building responsive web applications using React and JavaScript, focusing on performance and user experience.",
+    expectedCtc: "৳ 80,000 - 1,20,000 /month",
+    location: "Sylhet, Bangladesh",
+    image: "avatar13",
+  },
+  {
+    name: "Lamia Haque",
+    role: "Finance Officer",
+    company: "Square Pharmaceuticals",
+    topSkills: ["Accounting", "Excel", "Financial Analysis"],
+    about:
+      "Finance Officer managing accounting and financial reporting, skilled in Excel, budgeting, and financial analysis.",
+    expectedCtc: "৳ 75,000 - 1,10,000",
+    location: "Dhaka, Bangladesh",
+    image: "avatar14",
+  },
+];
+
+const profile={
+    name: "Sumaiya Hossain Surovi",
     role: "Software Engineer",
     company: "Google",
     location: "New York, United States",

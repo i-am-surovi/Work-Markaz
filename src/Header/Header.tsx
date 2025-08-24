@@ -7,10 +7,12 @@ import {
   IconDotsVertical,
 } from "@tabler/icons-react";
 import NavLinks from "./NavLink";
+import { useLocation } from "react-router-dom";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  const location=useLocation();
   return (
     <div className="w-full bg-white-50 px-6 text-white h-20 flex justify-between items-center relative font-['poppins']">
       {/* Logo Section */}

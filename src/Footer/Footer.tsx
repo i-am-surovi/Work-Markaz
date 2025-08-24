@@ -8,7 +8,7 @@ import {
 import { footerLinks } from "../Data/Data";
 
 const Footer = () => {
-  return <div className="pt-10 pb-5 flex gap-5 justify-around  bg-white-100 font-['poppins']">
+  return <div className="mt-4 pt-10 pb-5 flex gap-5 justify-around  bg-white-100 font-['poppins']">
       <div className="w-1/4 flex flex-col gap-4">
         <div className="flex gap-1 items-center text-azure-radiance-600">
           <IconDeviceDesktopSearch className="h-6 w-6" stroke={2.5} />
