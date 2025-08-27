@@ -1,10 +1,11 @@
 import "./App.css";
-import { createTheme, MantineProvider, } from "@mantine/core";
+import { createTheme, Divider, MantineProvider, } from "@mantine/core";
 import "@mantine/core/styles.css";
 import "@mantine/carousel"
 import HomePage from "./Pages/HomePage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import FindJobs from "./Pages/FindJobsPage";
+import '@mantine/core/styles.css';
+import '@mantine/tiptap/styles.css';
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
 import FindJobsPage from "./Pages/FindJobsPage";
@@ -55,6 +56,7 @@ function App() {
     <MantineProvider defaultColorScheme="light" theme={theme}>
       <BrowserRouter>
         <Header/>
+        <Divider size="xs" mx="md"/>
         <Routes>
           <Route path='/signup' element={<SignUpPage/>} />
           <Route path='*' element={<HomePage/>} />
