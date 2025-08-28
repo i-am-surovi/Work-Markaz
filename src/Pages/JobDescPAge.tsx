@@ -1,15 +1,13 @@
 import { Button, Divider } from "@mantine/core";
 import { IconArrowLeft } from "@tabler/icons-react";
 import { Link } from "react-router-dom";
-import Profile from "../TalentProfile/Profile";
-import { profile } from "../Data/TalentData";
-import RecommendTalent from "../TalentProfile/RecommendTalent";
+import JobDesc from "../JobDesc/JobDesc";
+import RecommendedJob from "../JobDesc/RecommendedJob";
 
-
-const TalentProfilePage = () => {
+const JobDescPage = () => {
     return  <div className="min-h-[90vh] bg-white-50 font-['poppins'] p-4">
         <Link className="my-4 inline-block"
-         to="/find-talent">
+         to="/find-jobs">
           <Button
             leftSection={<IconArrowLeft size={20}/>}
             className="rounded"
@@ -20,10 +18,10 @@ const TalentProfilePage = () => {
             Back
           </Button>
         </Link>
-        <div className="flex gap-5">
-            <Profile {...profile}/>
-            <RecommendTalent/>
+        <div className="flex gap-5 justify-around">
+            <JobDesc/>
+            <RecommendedJob/>
         </div>
     </div>
 }
-export default TalentProfilePage; 
+export default JobDescPage; 
