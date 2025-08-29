@@ -90,7 +90,7 @@ const JobDesc = () => {
               <div className=" text-white-900">10K+ Employees</div>
             </div>
           </div>
-          <Link to="/">
+          <Link to="/company">
             <Button
               className="rounded"
               color="azure-radiance.6"

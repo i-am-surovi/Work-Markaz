@@ -51,4 +51,34 @@ const similar=[
 }
 ]
 
-export {companyData, similar};  
+// ../Data/CompanyRatings.ts
+
+const companyRatings = {
+  average: 4.2,
+  total: 3,
+  reviews: [
+    {
+      id: "r1",
+      user: "Ayesha K.",
+      rating: 4.5,
+      text: "Interview process structured chhilo, feedback tao quick peyechi.",
+      date: "2025-08-01T12:00:00.000Z",
+    },
+    {
+      id: "r2",
+      user: "Rahim U.",
+      rating: 4,
+      text: "Team supportive, onboarding smooth. Work-life balance bhalo.",
+      date: "2025-08-10T09:30:00.000Z",
+    },
+    {
+      id: "r3",
+      user: "Nadia S.",
+      rating: 3.5,
+      text: "Benefits bhalo, kintu interview slots pete kichu delay hoyeche.",
+      date: "2025-08-18T15:15:00.000Z",
+    },
+  ],
+};
+
+export {companyData, similar, companyRatings};  
