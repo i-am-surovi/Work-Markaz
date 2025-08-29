@@ -62,7 +62,6 @@ function App() {
           <Header />
           <Divider size="xs" mx="md" />
           <Routes>
-            <Route path="/signup" element={<SignUpPage />} />
             <Route path="*" element={<HomePage />} />
             <Route path="/find-jobs" element={<FindJobsPage />} />
             <Route path="/jobs" element={<JobDescPage />} />
@@ -72,6 +71,8 @@ function App() {
             <Route path="/find-talent" element={<FindTalentPage />} />
             <Route path="/talent-profile" element={<TalentProfilePage />} />
             <Route path="/company" element={<CompanyPage />} />
+            <Route path="/signup" element={<SignUpPage />} />
+            <Route path="/login" element={<SignUpPage />} />
           </Routes>
           <Footer />
         </div>

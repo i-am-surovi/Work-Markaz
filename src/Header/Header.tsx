@@ -12,9 +12,10 @@ import { useLocation } from "react-router-dom";
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const location=useLocation();
+  const location=useLocation(); 
+
   return (
-    <div className="w-full bg-white-50 px-6 text-white h-20 flex justify-between items-center relative font-['poppins']">
+    location.pathname!="/signup" && location.pathname!="/login"?<div className="w-full bg-white-50 px-6 text-white h-20 flex justify-between items-center relative font-['poppins']">
       {/* Logo Section */}
       <div className="flex gap-1 items-center text-azure-radiance-600">
         <IconDeviceDesktopSearch className="h-8 w-8" stroke={2.5} />
@@ -60,8 +61,8 @@ const Header = () => {
       {/* Desktop Right Section */}
       <div className="hidden lg:flex gap-3 items-center ml-auto">
         <div className="flex items-center gap-2">
-          <div className="text-black">Marshal</div>
-          <Avatar src="avatar.png" alt="it's me" />
+          <div className="text-azure-radiance-800 font-semibold">Surovi</div>
+          <Avatar src="avatarr.png" alt="it's me" />
         </div>
         <div className="bg-white-100 p-1.5 rounded-full text-black">
           <IconSettings stroke={2} />
@@ -72,7 +73,7 @@ const Header = () => {
           </Indicator>
         </div>
       </div>
-    </div>
+    </div>:<></>
   );
 };
 
